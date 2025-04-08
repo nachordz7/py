@@ -1,0 +1,15 @@
+#logo{
+   width: 70px;
+   height: 70px;
+}
+
+#principal{
+    width: 300px;
+    height: 200px;
+}
+
+header{
+    background-color: darkgrey;
+    font-size: 20px;
+    padding: 25px;
+}
