@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div { 
+    display: flex;
+    grid-template-columns: auto;
+  }
