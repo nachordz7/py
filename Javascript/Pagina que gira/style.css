@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;      
+    margin: 0;              
+    font-family: sans-serif;
+    border: 1px solid black; 
+    padding: 40px;         
+    box-sizing: border-box; 
+}
+
+div {
+    text-align: center;     /* Centra el texto y los elementos en línea dentro del div */
+    border: 1px solid black; /* El borde de tu div */
+    padding: 20px;          /* Espacio entre el contenido y el borde del div */
+    max-width: 500px;       /* Limita el ancho máximo del div */
+    width: 90%;             /* Para que sea responsivo, ocupa el 90% del ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño total del div */
+}
+
