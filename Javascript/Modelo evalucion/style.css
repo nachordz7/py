@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+form, .buttons{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin-top:  10px;
+}
+
+input[type="text"]{
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+button{
+  
+}
