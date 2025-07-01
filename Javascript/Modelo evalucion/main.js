@@ -8,7 +8,7 @@ function handleSubmit(e) {
     let a = +e.target.a.value;
     let b = +e.target.b.value;
     let p = document.createElement('p');
-    p.textContent = '${rand(a,b)}, ${rand(a,b)}, ${rand(a,b)}';
+    p.textContent = `${rand(a,b)}, ${rand(a,b)}, ${rand(a,b)}`;
     document.body.append(p);
     e.target.reset();
     }
