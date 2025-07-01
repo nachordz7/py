@@ -30,7 +30,30 @@ let ourPlanetName = "Tierra";
 let currentUserName = "Juan";
 */
 
-// 5. Tipos de datos
+// 10. Ejecución condicional: if, '?'
 /*
+let name = prompt('¿Cuál es el nombre “oficial” de JavaScript?');
 
+if(name == 'ECMAScript'){
+    alert('¡Correcto!');
+}
+else alert('¿No lo sabes? ¡ECMAScript!');
+
+
+let num = prompt('Ingrese un numero: ');
+if(num > 0){
+    alert('1');
+}
+else if(num < 0){
+    alert('-1');
+}
+else alert('0');
 */
+
+// 15. Funciones 
+
+function showMessage(){
+    alert('mensaje desde una funcion');
+}
+
+showMessage();
