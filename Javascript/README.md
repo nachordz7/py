@@ -6,3 +6,7 @@
 - [reloj-js](https://github.com/santiagotrini/reloj-js)
 - [calculadora](https://github.com/santiagotrini/calculadora)
 - [miercoles25](https://github.com/santiagotrini/miercoles25)
+
+# Leer de Javainfo 
+- [Fecha y Hora](https://es.javascript.info/date)
+- [setTimeout y setInterval](https://es.javascript.info/settimeout-setinterval)
