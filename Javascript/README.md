@@ -10,3 +10,4 @@
 # Leer de Javainfo 
 - [Fecha y Hora](https://es.javascript.info/date)
 - [setTimeout y setInterval](https://es.javascript.info/settimeout-setinterval)
+- [DOM](https://es.javascript.info/dom-navigation) 
