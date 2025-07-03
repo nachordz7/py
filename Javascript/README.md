@@ -11,4 +11,6 @@
 - [Fecha y Hora](https://es.javascript.info/date)
 - [setTimeout y setInterval](https://es.javascript.info/settimeout-setinterval)
 - [DOM](https://es.javascript.info/dom-navigation) 
-- [getElement y querySelector](https://es.javascript.info/searching-elements-dom) 
+- [getElement y querySelector](https://es.javascript.info/searching-elements-dom)
+- [innerHTML y textContent](https://es.javascript.info/basic-dom-node-properties)
+- [document.create y node.](https://es.javascript.info/modifying-document#eliminacion-de-nodos)
