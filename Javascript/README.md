@@ -14,7 +14,6 @@
 - [document.create y node.](https://es.javascript.info/modifying-document#eliminacion-de-nodos)
 - [classList y className](https://es.javascript.info/styles-and-classes)
 - [onclick - addEventListener y tipos de eventos](https://es.javascript.info/introduction-browser-events)
-  
-
+- [formulario](https://es.javascript.info/forms-submit)
 - [Fecha y Hora](https://es.javascript.info/date)
 - [setTimeout y setInterval](https://es.javascript.info/settimeout-setinterval)
