@@ -1,1 +1,8 @@
-
+body {
+  
+    font-family: sans-serif;
+  }
+  .resaltado {
+    color: red;
+    font-weight: bold;
+  }
