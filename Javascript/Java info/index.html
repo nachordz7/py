@@ -3,14 +3,26 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
   <title>Aprendiendo javascript</title>
 </head>
-<body>
+<body id="cuerpo">
   <h1>
-    Curso JavaScript <a href=" https://es.javascript.info/"  target="_blank">java info</a>
+    Curso JavaScript <a href=" https://es.javascript.info/" onclick="return false" target="_blank">java info</a>
   </h1>
-  <script src="scripts/main.js"></script>
+ <hr>
+  
+  <h2>Agregando nuevo texto con CreateElement e inserciones(append, prepend, before, after, replaceWith)</h2>
+  <button id="btn" onclick="nuevo()">Boton de agregar</button>
+  <ul></ul>
+ <hr>
+  <h2 id="prueba">Ejemplo de classList.add y contains</h2>
+  <h2 id="prueba2">Ejemplo de classList.toggle</h2>
+  <button id="bt1" onclick="add()">Agregar</button>
+  <button id="bt3" onclick="toggle()">Alternar</button>
+
+
+
+  <script src="main.js"></script>
 </body>
 </html>
-
