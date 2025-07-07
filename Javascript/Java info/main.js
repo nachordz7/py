@@ -94,7 +94,6 @@ body.onclick = handleAnyClick;
 /*Escribir una funcion que se ejecute al enviar un formulario con dos imputs cuyos nombres son 'a' y 'b'.
 Al enviar el formulario leer los valores y cambiar un <h1>(el unico de la pagina) para que diga resultado de a + b.
 */
-
 function enviar(e){
   e.preventDefault();
   let formulario = e.target; 
@@ -111,19 +110,49 @@ button.addEventListener('click',function(){
 });
 
 // Hacer un reloj
-setInterval(actualizarReloj,1000);
+setInterval(actualizarReloj,1000); // Repite la funcion actualizarReloj cada 1 segundo
 function actualizarReloj(){     // Crea una funcion
   let ahora = new Date();       // Crea un objeto de fecha y hora actual
 
-  let horas = String(ahora.getHours()).padStart(2,'0');
-  let minutos = String(ahora.getMinutes()).padStart(2,'0'); 
-  let segundos = String(ahora.getSeconds()).padStart(2,'0');
+  // Formula de String: String(valor).padStart(2,'0') Esto sirve para crear un minimo de 2 caracteres
+  let horas = String(ahora.getHours()).padStart(2,'0'); // Crea horas y se le asigna la hora actual. 
+  let minutos = String(ahora.getMinutes()).padStart(2,'0'); // Crea minutos y se le asigna los minutos actuales.
+  let segundos = String(ahora.getSeconds()).padStart(2,'0'); // Crea segundos y se le asigna los segundos actuales.
 
-  let reloj = `${horas}:${minutos}:${segundos}`;
-  let h1 = document.querySelector('#clock h1');
-  h1.textContent = reloj ;
+  let reloj = `${horas}:${minutos}:${segundos}`; // Crea reloj y se le asigna los valores de horas, minutos y segundos
+  let h1 = document.querySelector('#clock h1'); // Lee el h1 dentro del div con id #clock 
+  h1.textContent = reloj ; // Crea un nuevo texto en h1 con el contenido de reloj 
 }
-actualizarReloj();
+actualizarReloj(); // llama a la funcion. Esto hace que corra la funcion sin que tenga delay
 
 
 // Hacer un contador
+let intervalo = setInterval(contador,1000);
+
+function contador(){
+  let cont = document.querySelector('#contador h1');
+  let now = new Date();
+  let fecha = new Date('2025-07-19 00:00:00');
+  let diff = fecha - now;
+
+  if(diff <=0){
+    cont.textContent = 'SON VACACIONES DE INVIERNO';
+    clearInterval(intervalo);
+    return;
+  }
+  
+  let dia = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hora = Math.floor(diff / (1000 * 60 * 60)) % 24;
+  let minuto = Math.floor (diff / (1000 * 60)) % 60;
+  let segundo = Math.floor(diff / 1000) % 60;
+  console.log(dia,hora,minuto,segundo);
+
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+
+
+  cont.style.backgroundColor = `rgb(${r},${g},${b})`;
+  cont.textContent = `Faltan ${dia} dias, ${hora} horas, ${minuto} minutos y ${segundo} segundos para las vacaciones`;
+}
+contador();
