@@ -39,7 +39,7 @@ console.log(`Numero aleatorio entre 50 y 100: ${ran}`); // Muestra el número en
 // Mostra un fruta aleatoria
 let frutas = ['manzana', 'banana', 'uva', 'pera', 'naranja'];  // Crea un array con 5 frutas
 
-random1 = Math.floor(Math.random() * frutas.length); // Crea random1 con un valor random de frutas, .lenght cuenta la cantidaddaue hay dentro de una variable
+let random1 = Math.floor(Math.random() * frutas.length); // Crea random1 con un valor random de frutas, .lenght cuenta la cantidaddaue hay dentro de una variable
 console.log(`Fruta: ${frutas[random1]}`); // Muestra una fruta random en la consola
 
 // Generá dos números aleatorios del 1 al 6 y mostrales la suma.
@@ -59,3 +59,71 @@ function random(){   // Crea una función llamada random
   h1.textContent = `RGB: ${r},${g},${b}`;   // Cambia el contenido que hay de h1 por uno nuevo
 }
 
+//Usar onclick en un boton para cambiar el color de un <h1> con style.color.
+let boton = document.querySelector('#boton');
+let header = document.querySelector('#h1');
+
+function cambiar(){
+  header.style.backgroundColor = 'gray';
+  header.style.color = 'red';
+}
+
+// formulario y boton 
+function handleSubmit(event){
+  event.preventDefault();
+  let form = event.target;
+  let msg = 'Bienvenido ' + form.nombre.value;
+  alert(msg);
+  form.reset();
+}
+
+function handleClick(event){
+  let bot = event.target;
+  let n = parseInt(bot.textContent);
+  n = n + 1;
+  bot.textContent = n;
+}
+
+// Funcion que muestre el elemento clickeado en consola
+let body = document.querySelector('body');
+function handleAnyClick(e){
+  console.log(e.target);
+}
+body.onclick = handleAnyClick;
+
+/*Escribir una funcion que se ejecute al enviar un formulario con dos imputs cuyos nombres son 'a' y 'b'.
+Al enviar el formulario leer los valores y cambiar un <h1>(el unico de la pagina) para que diga resultado de a + b.
+*/
+
+function enviar(e){
+  e.preventDefault();
+  let formulario = e.target; 
+  let h1 = document.querySelector('#unico');
+  let resultado = parseFloat(formulario.a.value) + parseFloat(formulario.b.value);
+  h1.textContent = `Resultado de a + b = ${resultado}`; 
+}
+
+let button = document.querySelector('#button');
+let h2 = document.querySelector('#h2');
+
+button.addEventListener('click',function(){
+  h2.style.color = 'green';
+});
+
+// Hacer un reloj
+setInterval(actualizarReloj,1000);
+function actualizarReloj(){     // Crea una funcion
+  let ahora = new Date();       // Crea un objeto de fecha y hora actual
+
+  let horas = String(ahora.getHours()).padStart(2,'0');
+  let minutos = String(ahora.getMinutes()).padStart(2,'0'); 
+  let segundos = String(ahora.getSeconds()).padStart(2,'0');
+
+  let reloj = `${horas}:${minutos}:${segundos}`;
+  let h1 = document.querySelector('#clock h1');
+  h1.textContent = reloj ;
+}
+actualizarReloj();
+
+
+// Hacer un contador
