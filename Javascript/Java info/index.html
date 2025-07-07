@@ -20,12 +20,41 @@
   <h2 id="prueba2">Ejemplo de classList.toggle</h2>
   <button id="bt1" onclick="add()">Agregar</button>
   <button id="bt3" onclick="toggle()">Alternar</button>
-
+<hr>
 <div>
   <h1 id="encabezado" onclick='random()'>RGB:
   </h1>
 </div>
+<hr>
+<button id="boton" onclick="cambiar()">boton</button>
+<h1 id="h1">Cambiar de color con style.color</h1>
+<hr>
+<h1>Un formulario y un boton</h1>
+<form onsubmit="handleSubmit(event)">
+  <input type="text" name="nombre" placeholder="Tu nombre">
+  <input type="submit" value="Enviar">
+</form>
 
-  <script src="main.js"></script>
+<button onclick="handleClick(event)">0</button>
+<hr>
+<form id="ej9" onsubmit="enviar(event)">
+  <input type="text" placeholder="A" name="a">
+  <input type="text" placeholder="B" name="b">
+  <input type="submit" value="Enviar">
+</form>
+  <h1 id="unico"></h1>
+<hr>
+<button id="button">Cambiar</button>
+<h2 id="h2">cambiando el texto con addEventListener</h2>
+<hr>
+<div id="clock">
+  <h1>00:00:00</h1>
+</div>
+<hr>
+<div id="contador">
+  <h1></h1>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
