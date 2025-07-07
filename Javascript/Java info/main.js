@@ -156,3 +156,50 @@ function contador(){
   cont.textContent = `Faltan ${dia} dias, ${hora} horas, ${minuto} minutos y ${segundo} segundos para las vacaciones`;
 }
 contador();
+
+  // Cronometro 
+  let segundos = 0;
+  let interval;
+
+  let display = document.getElementById('cronometro');
+  let startBtn = document.getElementById('start');
+  let stopBtn = document.getElementById('stop');
+  let resetBtn = document.getElementById('reset');
+
+  function actualizarDisplay() {
+    let hrs = Math.floor(segundos / 3600);
+    let min = Math.floor((segundos % 3600) / 60);
+    let seg = segundos % 60;
+
+    // Formatear con ceros a la izquierda
+    let texto = 
+      String(hrs).padStart(2, '0') + ':' +
+      String(min).padStart(2, '0') + ':' +
+      String(seg).padStart(2, '0');
+
+    display.textContent = texto;
+  }
+
+  function iniciar() {
+    if (!interval) { // evitar múltiples intervalos
+      interval = setInterval(() => {
+        segundos++;
+        actualizarDisplay();
+      }, 1000);
+    }
+  }
+
+  function detener() {
+    clearInterval(interval);
+    interval = null;
+  }
+
+  function reiniciar() {
+    detener();
+    segundos = 0;
+    actualizarDisplay();
+  }
+
+  startBtn.onclick = iniciar;
+  stopBtn.onclick = detener;
+  resetBtn.onclick = reiniciar;
