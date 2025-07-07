@@ -39,23 +39,23 @@ console.log(`Numero aleatorio entre 50 y 100: ${ran}`); // Muestra el número en
 // Mostra un fruta aleatoria
 let frutas = ['manzana', 'banana', 'uva', 'pera', 'naranja'];  // Crea un array con 5 frutas
 
-random1 = Math.floor(Math.random() * frutas.length); // Crea random1 con un valor random de frutas, .lenght cuenta la cantidaddde una variable
+random1 = Math.floor(Math.random() * frutas.length); // Crea random1 con un valor random de frutas, .lenght cuenta la cantidaddaue hay dentro de una variable
 console.log(`Fruta: ${frutas[random1]}`); // Muestra una fruta random en la consola
 
 // Generá dos números aleatorios del 1 al 6 y mostrales la suma.
 let r1 = Math.floor(Math.random() * 6) + 1; // Crea r1 con un valor random del 1 al 6
 let r2 = Math.floor(Math.random() * 6) + 1; // Crea r1 con un valor random del 1 al 6
-let suma = r1 + r2;  // Crea un variable suma y almacena la suma de dos número randoms 
+let suma = r1 + r2;  // Crea un variable suma y almacena la suma de dos números randoms 
 console.log(`${r1} + ${r2} = ${suma}`);  // Muestra el resultado de la suma en la consola
 
 // Hacer un h1 con un background random
 let h1 = document.querySelector('#encabezado');  // Localiza y crea una variable h1
 
-function random(){
-  let r = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
-  h1.style.backgroundColor =`rgb(${r},${g},${b} )`;
-  h1.textContent = `RGB: ${r},${g},${b}`;
+function random(){   // Crea una función llamada random
+  let r = Math.floor(Math.random() * 256);   // Crea una variable r con un valor random del 0-255. Math.floor redondea para abajo 
+  let g = Math.floor(Math.random() * 256); // Crea una variable g con un valor random del 0-255
+  let b = Math.floor(Math.random() * 256); // Crea una variable b con un valor random del 0-255
+  h1.style.backgroundColor =`rgb(${r},${g},${b} )`;    // Cambia el fondo de color del h1 con los valores de r, g, y b 
+  h1.textContent = `RGB: ${r},${g},${b}`;   // Cambia el contenido que hay de h1 por uno nuevo
 }
 
