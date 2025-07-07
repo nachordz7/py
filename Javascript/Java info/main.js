@@ -20,8 +20,8 @@ if (prueba.classList.contains('resaltado')) {       // Condicion de si la clase 
 }
 }
 
-function toggle(){
-  prueba2.classList.toggle('resaltado');  
+function toggle(){                   // Crea una función llamada toggle 
+  prueba2.classList.toggle('resaltado');  // A prueba se le asigna la clase 'resaltado', . toggle hace que alterne su valor (si es true cambia a false y viceversa) 
 }
 
 
