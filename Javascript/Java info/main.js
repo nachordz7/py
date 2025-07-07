@@ -25,22 +25,22 @@ function toggle(){
 }
 
 
-let num = Math.floor(Math.random() * 10);
-console.log(`Numero aleatorio: ${num}`);
+let num = Math.floor(Math.random() * 10); // Declara una variable num con un número random del 1 al 9
+console.log(`Numero aleatorio: ${num}`); // Muestra el resultado en la consola
 
 // Simulá tirar un dado que devuelve un número del 1 al 6.
-let dado = Math.floor(Math.random()*6)+1;
-console.log(`Tiraste un dado: ${dado}`);
+let dado = Math.floor(Math.random()*6)+1; // Crea un dado con un número random del 1 al 6
+console.log(`Tiraste un dado: ${dado}`); // Muestra el resultado en la consola
 
 // Mostra un nunero aleatorio en 50 y 100
-let ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-console.log(`Numero aleatorio entre 50 y 100: ${ran}`);
+let ran = Math.floor(Math.random() * (100 - 50 + 1)) + 50;  // Crea una variable ran con un valor random de máxima 100 y mínima 50
+console.log(`Numero aleatorio entre 50 y 100: ${ran}`); // Muestra el número en la consola
 
 // Mostra un fruta aleatoria
-let frutas = ['manzana', 'banana', 'uva', 'pera', 'naranja'];
+let frutas = ['manzana', 'banana', 'uva', 'pera', 'naranja'];  // Crea un array con 5 frutas
 
-random1 = Math.floor(Math.random() * frutas.length);
-console.log(`Fruta: ${frutas[random1]}`);
+random1 = Math.floor(Math.random() * frutas.length); // Crea random1 con un valor random de frutas, .lenght cuenta la cantidaddde una variable
+console.log(`Fruta: ${frutas[random1]}`); // Muestra una fruta random en la consola
 
 // Generá dos números aleatorios del 1 al 6 y mostrales la suma.
 let r1 = Math.floor(Math.random() * 6) + 1;
