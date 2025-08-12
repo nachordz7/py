@@ -7,3 +7,10 @@ body {
     text-align: center;
     height: 100vh;
   }
+  
+  .container{
+    height: 40%;
+    width: 50%;
+    border: 1px solid black;
+    
+  }
