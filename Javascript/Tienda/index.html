@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda 11-8</title>
+    <title>25-8/2025</title>
     <link rel="stylesheet" href="style.css">
+    <!--Ejercicio: Partiendo desde el codigo de github.com/santiagotrini/carrito-js
+        1) Agregar funcion "eliminar del carrito"
+        2) Agregar funcion "cambiar cantidad" para cada producto del carrito-->
 </head>
 <body>
-    <h1>Store</h1>
-    <input type="submit" value="boton" onclick="compra(event)">
-    <div class="container"></div>
-    <script src="main.js"></script>
+    <header>
+        <h2>FakestoreAPI</h2>
+        <h2 onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></h2>
+      </header>
+      <h1>Carrito</h1>
+      <div class="products"></div>
+      <div class="cart closed">
+        
+      </div>
 </body>
+<script src="main.js"></script>
 </html>
