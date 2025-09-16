@@ -1,4 +1,4 @@
-# Todo lo que entra en la prueba:
+# Todo lo que entra en la 2da prueba (29/9):
 
 - [unformulario](https://github.com/santiagotrini/unformulario)
 - [estilos-js](https://github.com/santiagotrini/estilos-js)
@@ -6,6 +6,9 @@
 - [reloj-js](https://github.com/santiagotrini/reloj-js)
 - [calculadora](https://github.com/santiagotrini/calculadora)
 - [miercoles25](https://github.com/santiagotrini/miercoles25)
+- [fetch-js](https://github.com/santiagotrini/fetch-js)
+- [objetos-js](https://github.com/santiagotrini/objetos-js)
+- [carrito-js](https://github.com/santiagotrini/carrito-js)
 
 # Leer de Javainfo 
 - [DOM](https://es.javascript.info/dom-navigation) 
