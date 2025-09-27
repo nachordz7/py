@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Aprendiendo javascript</title>
+</head>
+<body id="cuerpo">
+  <h1>
+    Curso JavaScript <a href=" https://es.javascript.info/" onclick="return false" target="_blank">java info</a>
+  </h1>
+ <hr>
+  
+  <h2>Agregando nuevo texto con CreateElement e inserciones(append, prepend, before, after, replaceWith)</h2>
+  <button id="btn" onclick="nuevo()">Boton de agregar</button>
+  <ul></ul>
+ <hr>
+  <h2 id="prueba">Ejemplo de classList.add y contains</h2>
+  <h2 id="prueba2">Ejemplo de classList.toggle</h2>
+  <button id="bt1" onclick="add()">Agregar</button>
+  <button id="bt3" onclick="toggle()">Alternar</button>
+<hr>
+<div>
+  <h1 id="encabezado" onclick='random()'>RGB:
+  </h1>
+</div>
+<hr>
+<button id="boton" onclick="cambiar()">boton</button>
+<h1 id="h1">Cambiar de color con style.color</h1>
+<hr>
+<h1>Un formulario y un boton</h1>
+<form onsubmit="handleSubmit(event)">
+  <input type="text" name="nombre" placeholder="Tu nombre">
+  <input type="submit" value="Enviar">
+</form>
+
+<button onclick="handleClick(event)">0</button>
+<hr>
+<form id="ej9" onsubmit="enviar(event)">
+  <input type="text" placeholder="A" name="a">
+  <input type="text" placeholder="B" name="b">
+  <input type="submit" value="Enviar">
+</form>
+  <h1 id="unico"></h1>
+<hr>
+<button id="button">Cambiar</button>
+<h2 id="h2">cambiando el texto con addEventListener</h2>
+<hr>
+<div id="clock">
+  <h1>00:00:00</h1>
+</div>
+<hr>
+<div id="contador">
+  <h1></h1>
+</div>
+
+<div id="cronometro">00:00:00</div>
+<button id="start">Iniciar</button>
+<button id="stop">Detener</button>
+<button id="reset">Reiniciar</button>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  
+  font-family: sans-serif;
+}
+.resaltado {
+  color: red;
+  font-weight: bold;
+}
+
+#encabezado {
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  border-radius: 8px;    /* Opcional: esquinas redondeadas */
+  font-weight: bold;
+}
+
+#clock {
+  text-align: center;
+  margin-top: 50px;
+  font-family: monospace;
+}
+
+#clock h1 {
+  font-size: 4rem;
+  background-color: rgb(17, 16, 16);
+  color: rgb(180, 111, 20);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
