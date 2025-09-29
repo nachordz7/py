@@ -1,3 +1,2 @@
-## Emmet https://docs.emmet.io/cheat-sheet/ 
-
-## Pagina de repaso: https://nachordz7.github.io/py/Javascript/Repaso/
+- [Emmet](https://docs.emmet.io/cheat-sheet/)
+- [Repaso](https://nachordz7.github.io/py/javascript/repaso/)
