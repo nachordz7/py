@@ -10,7 +10,7 @@
 - [objetos-js](https://github.com/santiagotrini/objetos-js)
 - [carrito-js](https://github.com/santiagotrini/carrito-js)
 
-# Leer de Javainfo 
+# Leer de Javainfo:
 - [DOM](https://es.javascript.info/dom-navigation) 
 - [getElement y querySelector](https://es.javascript.info/searching-elements-dom)
 - [innerHTML y textContent](https://es.javascript.info/basic-dom-node-properties)
