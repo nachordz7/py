@@ -1,2 +1,2 @@
 - [Emmet](https://docs.emmet.io/cheat-sheet/)
-- [Repaso](https://nachordz7.github.io/py/javascript/repaso/)
+- [Repaso de javascript](https://nachordz7.github.io/py/javascript/repaso/)
