@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repaso para el lunes</title>
+    <title>Repaso</title>
 </head>
 <style>
-    body{ 
+    #reloj{ 
         font-family: sans-serif;
         text-align: center;
     }
+    h1{
+    font-family: sans-serif;
+    }
+    .container {
+    display: grid;
+    grid-template: repeat(5,1fr) / repeat(5,1fr);
+    gap: 10px;
+    }
+
+    .card h4 {
+    font-size: 15px;
+    }
+    .card {
+    padding: 10px;
+    font-family: sans-serif;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px gray;
+    text-align: center;
+    }
 </style>
 <body>
+    <div id="reloj">    
     <h1>Abajo hay un reloj</h1>
     <h2></h2>
+    </div>
+
     <hr>
+    <h1>Debe aparecer una api de paises:</h1>
+    <div class="container"></div>
     <script src="script.js"></script>
 </body>
 </html>
