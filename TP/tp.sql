@@ -14,7 +14,7 @@ CREATE TABLE cursos(
 CREATE TABLE alumnos (
   id INT AUTO_INCREMENT PRIMARY KEY, 
   nombres varchar(255), 
-  apellidos varchar(255, 
+  apellidos varchar(255), 
   dni INT, 
   curso INT, 
   FOREIGN KEY (curso) REFERENCES cursos(id)
