@@ -7,27 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista de cursos</h1>
+    <h1>Asistencia</h1>
     
     <div class="control">
         <div>
-          <label for="cursoSelect">Curso:</label>
-          <select id="cursoSelect">
-            <option value="1A">1° A</option>
+          <label for="curso">Curso:</label>
+          <select id="curso">
+            <option>4to</option>
           </select>
         </div>
       
         <div>
-          <label for="materiaSelect">Materia:</label>
-          <select id="materiaSelect">
-            <option value="matematica">Matemática</option>
-            <option value="lengua">Lengua</option>
-            <option value="historia">Historia</option>
+          <label for="materia">Materia:</label>
+          <select id="materia">
+            <option>Base de Datos</option>
           </select>
         </div>
       </div>
 
-    <button onclick="handleClick(event)">P</button>
+      <table id="asistencia">
+        <thead>
+          <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juanfer</td>
+                <td>
+                  <button onclick="handleClick(event)">P</button>
+                </td>
+        </tbody>
+      </table>
+
+    
     <script src="main.js"></script>
 </body>
 </html>
