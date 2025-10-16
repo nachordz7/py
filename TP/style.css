@@ -8,3 +8,13 @@ h1 {
     text-align: center;
     font-family: sans-serif;
   }
+
+table, th, td{
+  border: 1px solid black ;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+table{
+  margin-top: 10px;
+}
