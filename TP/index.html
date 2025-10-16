@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Practico</title>
+    <title>TP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Abajo debe estar un listado</h1>
-   <table border="0">
-    <thead>
-        <tr>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Ausente</th>
-            <th>Presente</th>
-        </tr>
-    </thead>
-    <tbody>
-        <button onclick="handleClick(event)">P</button>
-    </tbody>
-</table>
+    <h1>Lista de cursos</h1>
+    
+    <div class="control">
+        <div>
+          <label for="cursoSelect">Curso:</label>
+          <select id="cursoSelect">
+            <option value="1A">1° A</option>
+          </select>
+        </div>
+      
+        <div>
+          <label for="materiaSelect">Materia:</label>
+          <select id="materiaSelect">
+            <option value="matematica">Matemática</option>
+            <option value="lengua">Lengua</option>
+            <option value="historia">Historia</option>
+          </select>
+        </div>
+      </div>
+
+    <button onclick="handleClick(event)">P</button>
     <script src="main.js"></script>
 </body>
 </html>
