@@ -60,7 +60,9 @@ app.post('/api/asistencias', (req, res) => {
         res.status(201).json({ msg: 'Alta OK' });
     });
 });
-  
-app.listen(3000, () => console.log('Server running at http://localhost:3000'));'));
 
-app.listen(3000, () => console.log('server online en localhost'));
+app.get('/api/test', (req, res) => {
+    res.send('Servidor funcionando correctamente ✅');
+});
+
+app.listen(3000, () => console.log('Server running at http://localhost:3000'));
