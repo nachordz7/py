@@ -1,17 +1,20 @@
 function handleClick(event){
   let datos = {
     tipo: event.target.textContent, 
-    alumno:2, 
-    materia:1
+    alumno: 2, 
+    materia: 1
   };
+
   const options = {
     method: 'POST', 
     body: JSON.stringify(datos), 
-    headers: {'Content-Type':'application/json'}
+    headers: { 'Content-Type': 'application/json' }
   };
-  const url = 'https/localhost:3000/api/asistencias';
+
+  const url = 'http://localhost:3000/api/asistencias';
+
   fetch(url, options)
-  .then(res => res.json()) 
-  .then(data => alert(data)) 
-  .cath(err => alert(err.stack));
+    .then(res => res.json()) 
+    .then(data => alert(JSON.stringify(data))) 
+    .catch(err => alert(err.stack));
 }
