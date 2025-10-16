@@ -1,6 +1,6 @@
 function handleClick(event){
   let datos = {
-    tipo: event.target.textContent, 
+    tipo: "P", //event.target.textContent
     alumno: 2, 
     materia: 1
   };
