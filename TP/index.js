@@ -53,7 +53,7 @@ conn.connect((err) => {
     }
     console.log('Base de datos conectada');
 });
-
+/*
 app.post('/api/asistencias', (req, res) => {
     const { tipo, alumno, materia } = req.body;
     const data = [tipo, alumno, materia];
@@ -67,7 +67,7 @@ app.post('/api/asistencias', (req, res) => {
     });
 });
 
-/*
+
 const app = express();
 app.use(cors()) ;
 app.use(express.json());
