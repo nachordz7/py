@@ -23,10 +23,11 @@ Base de datos conectada
 Server running at http://localhost:3000
 
 COSAS PARA NO OLVIDAR:
-que aparezca solo el curso y materia, y recien ahi que cargue el listado.
-Tenes que cargar los alumnos de la bd y que se muestren en la pagina.
-Hacer un boton para P, A, T, RA y una vez que clickeas debe el fondo del nombre aparecer del color del boton.
-Agregar alumnos nuevos desde la pagina.
+1.que aparezca solo el curso y materia, y recien ahi que cargue el listado.
+2.Tenes que cargar los alumnos de la bd y que se muestren en la pagina.
+3.Hacer un boton para P, A, T, RA y una vez que clickeas debe el fondo del nombre aparecer del color del boton.
+4.Agregar alumnos nuevos desde la pagina.
+Usar el evento onchange para el 1 
 */
 
 const express = require('express');
