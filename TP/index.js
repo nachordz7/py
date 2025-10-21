@@ -41,77 +41,65 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 const conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',       
-    password: '',       
-    database: 'tp'
-});
-
-conn.connect((err) => {
-    if (err) {
-        console.error('Error al conectar a la base de datos:', err);
-        return;
-    }
-    console.log('Base de datos conectada');
-});
-/*
-app.post('/api/asistencias', (req, res) => {
-    const { tipo, alumno, materia } = req.body;
-    const data = [tipo, alumno, materia];
-    const q = 'INSERT INTO registros (tipo, alumno, materia) VALUES (?, ?, ?)';
-    conn.query(q, data, (err, rs) => {
-        if (err) {
-            console.error('Error al insertar:', err);
-            return res.status(500).json({ error: 'Error al insertar' });
-        }
-        res.status(201).json({ msg: 'Alta OK' });
-    });
-});
-
-
-const app = express();
-app.use(cors()) ;
-app.use(express.json());
-app.use(morgan('dev')) ;
-
-
-const conn = mysql.createConnection({
-  host: 'localhost', 
+  host: 'localhost',
+  user: 'root',
+  password: '',
   database: 'tp'
 });
-*/
-app.post('/api/asistencias', (req, res) => {
-      const { tipo, alumno, materia } = req.body;
-      const data = [tipo, alumno, materia];
-      const q = 'INSERT INTO registros(tipo, alumno, materia) VALUES(?,?,?)';
- conn.query(q, data, (err, rs) => {
-   res.status(201).json({ msg: 'Alta OK'});
- }) ;
-}) ;
 
-//dame todos los cursos
-app.get('/api/cursos', (req, res) => {
-  conn.query('SELECT * FROM cursos', (err, rs) =>
-  {res.status(200).json(rs);
+// Conexión a la base de datos
+conn.connect((err) => {
+  if (err) {
+    console.error('❌ Error al conectar a la base de datos:', err);
+    return;
+  }
+  console.log('✅ Base de datos conectada');
+});
+
+// Registrar asistencia
+app.post('/api/asistencias', (req, res) => {
+  const { tipo, alumno, materia } = req.body;
+  const q = 'INSERT INTO registros (tipo, alumno, materia) VALUES (?, ?, ?)';
+  conn.query(q, [tipo, alumno, materia], (err, rs) => {
+    if (err) {
+      console.error('Error al insertar:', err);
+      return res.status(500).json({ error: 'Error al insertar' });
+    }
+    res.status(201).json({ msg: 'Alta OK' });
   });
 });
 
-//dame todos los alumnos de materias
-app.get('/api/alumnos/:materia',(req, res) =>{
-  const materia = req.params.curso;
-  const q = 'SELECT a.id, a.nombres, a.apellidos FROM alumnos a JOIN cursos c ON a.curso = c.id JOIN materias m ON m.curso = c.id WHERE m.id =?';
-  conn.query(q, [materia], (err, rs) => {
+// Obtener todos los cursos
+app.get('/api/cursos', (req, res) => {
+  conn.query('SELECT * FROM cursos', (err, rs) => {
+    if (err) return res.status(500).json({ error: err.message });
     res.status(200).json(rs);
   });
 });
 
-//dame todas las materias de un curso
-app.get('/api/materias/:curso', (req, res) =>{
+// Obtener todos los alumnos de una materia
+app.get('/api/alumnos/:materia', (req, res) => {
+  const materia = req.params.materia;
+  const q = `
+    SELECT a.id, a.nombres, a.apellidos
+    FROM alumnos a
+    JOIN cursos c ON a.curso = c.id
+    JOIN materias m ON m.curso = c.id
+    WHERE m.id = ?
+  `;
+  conn.query(q, [materia], (err, rs) => {
+    if (err) return res.status(500).json({ error: err.message });
+    res.status(200).json(rs);
+  });
+});
+
+// Obtener todas las materias de un curso
+app.get('/api/materias/:curso', (req, res) => {
   const curso = req.params.curso;
   conn.query('SELECT * FROM materias WHERE curso = ?', [curso], (err, rs) => {
-  res.status(200).json(rs);
+    if (err) return res.status(500).json({ error: err.message });
+    res.status(200).json(rs);
+  });
 });
-});
-conn.connect(() => console.log('base de datos conectada'));
 
-app.listen(3000, () => console.log('server online en localhost:3000'));
+app.listen(3000, () => console.log('🌐 Server online en http://localhost:3000'));
