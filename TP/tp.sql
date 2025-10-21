@@ -1,3 +1,38 @@
+/*
+Agregar un insert para alumnos
+Acuña Marcos
+Armani Franco
+Beltrán Santiago
+Borja Miguel
+Boselli Sebastián
+Bustos Fabricio
+Casco Milton
+Castaño Kevin
+Colidio Facundo
+Costantini Giorgio
+Dadín Bautista
+Díaz Paulo
+Driussi Sebastián
+Fernández Nacho
+Galarza Fonda Matías
+Galoppo Giuliano
+Gattoni Federico
+Ledesma Jeremías
+Lencina Santiago
+Martínez Gonzalo
+Martínez Quarta Lucas
+Meza Maximiliano
+Montiel Gonzalo
+Pérez Enzo
+Pezzella Germán
+Portillo Juan
+Quintero Juan Fernando
+Rivero Lautaro
+Salas Maximiliano
+Subiabre Ian
+*/
+
+
 --Base de datos del tp 
 DROP DATABASE IF EXISTS tp;
 CREATE DATABASE tp;
