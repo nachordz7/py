@@ -49,7 +49,7 @@ INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
   (3, 'Santiago Trini', 0, 'Base de Datos', 1),
   (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
-  (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
+  (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1);
 
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
