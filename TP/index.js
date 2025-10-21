@@ -61,19 +61,6 @@ app.post('/api/asistencias', (req, res) => {
     });
 });
 
-app.get('/api/test', (req, res) => {
-    res.send('Servidor funcionando correctamente ✅');
-});
-
-app.listen(3000, () => console.log('Server running at http://localhost:3000'));
-
-
-
-
-/*
-const express = require('express');
-const mysql = require('mysql');
-
 const app = express();
 app.use(cors()) ;
 app.use(express.json());
@@ -110,7 +97,6 @@ app.get('/api/alumnos/:materia',(req, res) =>{
   });
 });
 
-
 //dame todas las materias de un curso
 app.get('/api/materias/:curso', (req, res) =>{
   const curso = req.params.curso;
@@ -121,8 +107,3 @@ app.get('/api/materias/:curso', (req, res) =>{
 conn.connect(() => console.log('base de datos conectada'));
 
 app.listen(3000, () => console.log('server online en localhost:3000'));
-
-
-
-
-*/
