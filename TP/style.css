@@ -1,20 +1,130 @@
-/*
-body{
-    background-color: rgb(136, 136, 170);
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-*/
+
+body {
+    font-family: sans-serif;
+    background-color: darkgrey;
+    padding: 20px;
+}
 
 h1 {
     text-align: center;
-    font-family: sans-serif;
-  }
-
-table, th, td{
-  border: 1px solid black ;
-  padding: 5px;
-  border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-table{
-  margin-top: 10px;
+/* Controles de selects */
+.control {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.control div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px 12px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+/* Tabla responsive */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: green;
+    color: white;
+}
+
+th {
+    background-color: green; /* Fondo verde explícito */
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: white; /* Fondo blanco por defecto */
+}
+
+/* Eliminamos hover sobre filas */
+tbody tr:hover {
+    background-color: white;
+}
+
+/* Botones de asistencia */
+td button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    min-width: 40px;
+    transition: transform 0.1s;
+}
+
+button.presente { background-color: green; }
+button.ausente  { background-color: red; }
+button.tarde    { background-color: orange; }
+button.retiro   { background-color: skyblue; }
+
+/* Responsive móvil */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: white; /* Fondo blanco */
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-color: white; /* Fondo blanco */
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+    }
+
+    td button {
+        margin: 0 2px;
+        flex: 1;
+    }
 }
