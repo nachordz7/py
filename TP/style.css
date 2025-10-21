@@ -54,7 +54,7 @@ thead {
 }
 
 th {
-    background-color: green; /* Fondo verde explícito */
+    background-color: green; 
     color: white;
     border: 1px solid #ddd;
     padding: 10px;
@@ -67,12 +67,7 @@ td {
     padding: 10px;
     text-align: center;
     font-size: 16px;
-    background-color: white; /* Fondo blanco por defecto */
-}
-
-/* Eliminamos hover sobre filas */
-tbody tr:hover {
-    background-color: white;
+    background-color: white; 
 }
 
 /* Botones de asistencia */
