@@ -44,14 +44,14 @@ INSERT INTO cursos (anio, division, esp, aula)
 VALUES (4, 3, 'Computacion', 24);
 
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
-('Marcos', 'Acuña', 45651792, 1),
+('Marcos', 'Acuna', 45651792, 1),
 ('Franco', 'Armani', 45651793, 1),
 ('Santiago', 'Beltran', 45651794, 1),
 ('Miguel', 'Borja', 45651795, 1),
 ('Sebastian', 'Boselli', 45651796, 1),
 ('Fabricio', 'Bustos', 45651797, 1),
 ('Milton', 'Casco', 45651798, 1),
-('Kevin', 'Castaño', 45651799, 1),
+('Kevin', 'Castano', 45651799, 1),
 ('Facundo', 'Colidio', 45651800, 1),
 ('Giorgio', 'Costantini', 45651801, 1),
 ('Bautista', 'Dadin', 45651802, 1),
