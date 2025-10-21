@@ -21,6 +21,12 @@ node index.js
 Si todo esta bien hecho debe aparecer esto.
 Base de datos conectada
 Server running at http://localhost:3000
+
+COSAS PARA NO OLVIDAR:
+que aparezca solo el curso y materia, y recien ahi que cargue el listado.
+Tenes que cargar los alumnos de la bd y que se muestren en la pagina.
+Hacer un boton para P, A, T, RA y una vez que clickeas debe el fondo del nombre aparecer del color del boton.
+Agregar alumnos nuevos desde la pagina.
 */
 
 const express = require('express');
@@ -61,6 +67,7 @@ app.post('/api/asistencias', (req, res) => {
     });
 });
 
+/*
 const app = express();
 app.use(cors()) ;
 app.use(express.json());
@@ -71,7 +78,7 @@ const conn = mysql.createConnection({
   host: 'localhost', 
   database: 'tp'
 });
-
+*/
 app.post('/api/asistencias', (req, res) => {
       const { tipo, alumno, materia } = req.body;
       const data = [tipo, alumno, materia];
