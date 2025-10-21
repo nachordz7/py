@@ -1,48 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistencia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Asistencia</h1>
-    
-    <div class="control">
-        <div>
-          <label for="curso">Curso:</label>
-          <select id="curso">
-            <option>4to</option>
-          </select>
-        </div>
-      
-        <div>
-          <label for="materia">Materia:</label>
-          <select id="materia">
-            <option>Base de Datos</option>
-          </select>
-        </div>
-      </div>
+  <h1>Asistencia</h1>
 
-      <table id="asistencia">
-        <thead>
-          <tr>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Estado</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Juanfer</td>
-                <td>
-                  <button onclick="handleClick(event)">P</button>
-                </td>
-        </tbody>
-      </table>
+  <div class="control">
+    <div>
+      <label for="curso">Curso:</label>
+      <select id="curso" onchange="cargarMaterias(this.value)"></select>
+    </div>
 
-    
-    <script src="main.js"></script>
+    <div>
+      <label for="materia">Materia:</label>
+      <select id="materia" onchange="cargarAlumnos(this.value)"></select>
+    </div>
+  </div>
+
+  <table id="asistencia">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="main.js"></script>
 </body>
 </html>
