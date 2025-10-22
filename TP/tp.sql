@@ -42,8 +42,10 @@ CREATE TABLE registros(
 
 INSERT INTO cursos (anio, division, esp, aula) VALUES 
   (4, 3, 'Computacion', 24),
-  (4, 2, 'Computacion', 26),
-  (4, 9, 'Automotor', 15);
+  (4, 2, 'Computacion', 25),
+  (4, 4, 'Computacion', 26),
+  (4, 9, 'Automotor', 20);
+
 
 INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
