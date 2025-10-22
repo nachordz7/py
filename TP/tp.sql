@@ -48,21 +48,24 @@ INSERT INTO cursos (anio, division, esp, aula) VALUES
 
 
 INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
-  (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
-  (3, 'Santiago Trini', 0, 'Base de Datos', 1),
-  (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
-  (3, 'Santiago Trini', 0, 'Proyecto Informatico', 1);
+  (6, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
+  (6, 'Santiago Trini', 0, 'Base de Datos', 1),
+  (6, 'Santiago Trini', 0, 'Proyecto Informatico', 2),
+  (6, 'Santiago Trini', 0, 'Proyecto Informatico', 3),
+  (8, 'Camila De la Puente', 0,'Algoritmos', 1),
+  (8, 'Camila De la Puente', 0,'Algoritmos', 2),
+  (8, 'Camila De la Puente', 0,'Algoritmos', 3);
 
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
-('Franco', 'Armani', 45651793, 2),
-('Santiago', 'Beltran', 45651794, 3),
-('Miguel', 'Borja', 45651795, 4),
-('Sebastian', 'Boselli', 45651796, 1),
-('Fabricio', 'Bustos', 45651797, 2),
+('Franco', 'Armani', 45651793, 1),
+('Santiago', 'Beltran', 45651794, 2),
+('Miguel', 'Borja', 45651795, 2),
+('Sebastian', 'Boselli', 45651796, 3),
+('Fabricio', 'Bustos', 45651797, 3),
 ('Milton', 'Casco', 45651798, 3),
 ('Kevin', 'Castano', 45651799, 4),
-('Facundo', 'Colidio', 45651800, 1),
+('Facundo', 'Colidio', 45651800, 4),
 ('Giorgio', 'Costantini', 45651801, 2),
 ('Bautista', 'Dadin', 45651802, 3),
 ('Paulo', 'Diaz', 45651803, 4),
@@ -71,7 +74,7 @@ INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Matias', 'Galarza Fonda', 45651806, 3),
 ('Giuliano', 'Galoppo', 45651807, 4),
 ('Federico', 'Gattoni', 45651808, 1),
-('Jeremias', 'Ledesma', 45651809, 2),
+('Jeremias', 'Ledesma', 45651809, 1),
 ('Santiago', 'Lencina', 45651810, 3),
 ('Gonzalo', 'Martinez', 45651811, 3),
 ('Lucas', 'Martinez Quarta', 45651812, 1),
