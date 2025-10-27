@@ -50,11 +50,14 @@ INSERT INTO cursos (anio, division, esp, aula) VALUES
 INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (6, 'Santiago Trini', 0, 'Proyecto Informatico', 1),
   (6, 'Santiago Trini', 0, 'Base de Datos', 1),
+  (6, 'Santiago Trini', 0, 'Base de Datos', 2),
   (6, 'Santiago Trini', 0, 'Proyecto Informatico', 2),
   (6, 'Santiago Trini', 0, 'Proyecto Informatico', 3),
   (8, 'Camila De la Puente', 0,'Algoritmos', 1),
   (8, 'Camila De la Puente', 0,'Algoritmos', 2),
-  (8, 'Camila De la Puente', 0,'Algoritmos', 3);
+  (8, 'Camila De la Puente', 0,'Algoritmos', 3),
+  (4,'Mrs pitagoras',0,'Matematica',1),
+  (2,'Guillermo Di Tieri',0,'Geografia',1);
 
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
@@ -87,4 +90,3 @@ INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Lautaro', 'Rivero', 45651819, 2),
 ('Maximiliano', 'Salas', 45651820, 2),
 ('Ian', 'Subiabre', 45651821, 2);
-
