@@ -57,6 +57,7 @@ INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (8, 'Camila De la Puente', 0,'Algoritmos', 3);
 
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
+INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
 ('Franco', 'Armani', 45651793, 1),
 ('Santiago', 'Beltran', 45651794, 1),
@@ -78,13 +79,13 @@ INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Santiago', 'Lencina', 45651810, 1),
 ('Gonzalo', 'Martinez', 45651811, 1),
 ('Lucas', 'Martinez Quarta', 45651812, 1),
-('Maximiliano', 'Meza', 45651813, 1),
-('Gonzalo', 'Montiel', 45651814, 1),
-('Enzo', 'Perez', 45651815, 1),
-('German', 'Pezzella', 45651816, 1),
-('Juan', 'Portillo', 45651817, 1),
-('Juan Fernando', 'Quintero', 45651818, 1),
-('Lautaro', 'Rivero', 45651819, 1),
-('Maximiliano', 'Salas', 45651820, 1),
-('Ian', 'Subiabre', 45651821, 1);
+('Maximiliano', 'Meza', 45651813, 2),
+('Gonzalo', 'Montiel', 45651814, 2),
+('Enzo', 'Perez', 45651815, 2),
+('German', 'Pezzella', 45651816, 2),
+('Juan', 'Portillo', 45651817, 2),
+('Juan Fernando', 'Quintero', 45651818, 2),
+('Lautaro', 'Rivero', 45651819, 2),
+('Maximiliano', 'Salas', 45651820, 2),
+('Ian', 'Subiabre', 45651821, 2);
 
