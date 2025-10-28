@@ -57,8 +57,10 @@ INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (8, 'Camila De la Puente', 0,'Algoritmos', 2),
   (8, 'Camila De la Puente', 0,'Algoritmos', 3),
   (4,'Mrs pitagoras',0,'Matematica',1),
-  (2,'Guillermo Di Tieri',0,'Geografia',1);
-
+  (2,'Guillermo Di Tieri',0,'Geografia',1),
+  (2,'Bartucci',0,'Historia',1),
+  (3,'Mrs future',0,'Ingless',1);
+  
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
 ('Franco', 'Armani', 45651793, 1),
