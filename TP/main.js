@@ -1,3 +1,4 @@
+/*
 function cargarCursos(){
   fetch('http:/localhost:3000/api/cursos')
   .then(res => res.json()) 
@@ -56,7 +57,7 @@ function handleClick(event){
   .cath(err => alert(err.stack));
 }
 
-/*
+*/
 // Cargar cursos al inicio
 function cargarCursos() {
   fetch('http://localhost:3000/api/cursos')
@@ -70,7 +71,6 @@ function cargarCursos() {
         option.textContent = `${curso.anio} ${curso.division}° - ${curso.esp}`;
         selectCurso.appendChild(option);
       }
-      // Cargar materias del primer curso automáticamente
       if (cursos.length > 0) {
         cargarMaterias(cursos[0].id);
       }
@@ -125,7 +125,7 @@ function cargarAlumnos(materiaId) {
     .catch(err => console.error('Error cargando alumnos:', err));
 }
 
-// Registrar asistencia al clickear un botón
+// Registrar asistencia al clickear 
 function handleClick(event) {
   const tipo = event.target.textContent;
   const row = event.target.closest('tr');
@@ -148,6 +148,5 @@ function handleClick(event) {
     .catch(err => alert('Error: ' + err.message));
 }
 
-// Inicializamos la app cargando cursos al abrir la página
 cargarCursos();
-*/
+
