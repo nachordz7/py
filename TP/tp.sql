@@ -1,3 +1,4 @@
+
 --Base de datos del tp 
 DROP DATABASE IF EXISTS tp;
 CREATE DATABASE tp;
@@ -7,7 +8,7 @@ CREATE TABLE cursos(
   id INT AUTO_INCREMENT PRIMARY KEY,
   anio INT, 
   division INT, 
-  esp ENUM('Automotores', 'Ciclo badico', 'Computacion'), 
+  esp ENUM('Automotores', 'Ciclo basico', 'Computacion'), 
   aula INT
 );
 
@@ -41,10 +42,10 @@ CREATE TABLE registros(
 );
 
 INSERT INTO cursos (anio, division, esp, aula) VALUES 
-  (4, 3, 'Computacion', 24),
-  (4, 2, 'Computacion', 25),
+  (4, 2, 'Computacion', 24),
+  (4, 3, 'Computacion', 25),
   (4, 4, 'Computacion', 26),
-  (4, 9, 'Automotor', 20);
+  (4, 9, 'Automotores', 20);
 
 
 INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
@@ -59,7 +60,7 @@ INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
   (4,'Mrs pitagoras',0,'Matematica',1),
   (2,'Guillermo Di Tieri',0,'Geografia',1),
   (2,'Bartucci',0,'Historia',1),
-  (3,'Mrs future',0,'Ingless',1);
+  (3,'Mrs future',0,'Ingless',4);
   
 INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Marcos', 'Acuna', 45651792, 1),
@@ -91,4 +92,4 @@ INSERT INTO alumnos (nombres, apellidos, dni, curso) VALUES
 ('Juan Fernando', 'Quintero', 45651818, 2),
 ('Lautaro', 'Rivero', 45651819, 2),
 ('Maximiliano', 'Salas', 45651820, 2),
-('Ian', 'Subiabre', 45651821, 2);
+('Ian', 'Subiabre', 45651821, 4);
