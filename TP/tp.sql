@@ -1,4 +1,3 @@
-
 --Base de datos del tp 
 DROP DATABASE IF EXISTS tp;
 CREATE DATABASE tp;
@@ -42,10 +41,11 @@ CREATE TABLE registros(
 );
 
 INSERT INTO cursos (anio, division, esp, aula) VALUES 
-  (4, 2, 'Computacion', 24),
-  (4, 3, 'Computacion', 25),
-  (4, 4, 'Computacion', 26),
-  (4, 9, 'Automotores', 20);
+  (4, 2, 3, 24),
+  (4, 3, 3, 25),
+  (4, 4, 3, 26),
+  (4, 9, 1, 20),
+  (3, 3, 2, 19);
 
 
 INSERT INTO materias (horas, profesor, contraturno, nombre, curso) VALUES
