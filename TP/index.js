@@ -33,12 +33,10 @@ Usar el evento onchange para el 1
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
-const morgan = require('morgan');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(morgan('dev'));
 
 const conn = mysql.createConnection({
   host: 'localhost',
@@ -47,7 +45,6 @@ const conn = mysql.createConnection({
   database: 'tp'
 });
 
-// Conexión a la base de datos
 conn.connect((err) => {
   if (err) {
     console.error('❌ Error al conectar a la base de datos:', err);
@@ -61,11 +58,21 @@ app.post('/api/asistencias', (req, res) => {
   const { tipo, alumno, materia } = req.body;
   const q = 'INSERT INTO registros (tipo, alumno, materia) VALUES (?, ?, ?)';
   conn.query(q, [tipo, alumno, materia], (err, rs) => {
-    if (err) {
-      console.error('Error al insertar:', err);
-      return res.status(500).json({ error: 'Error al insertar' });
-    }
+    if (err) return res.status(500).json({ error: 'Error al insertar' });
     res.status(201).json({ msg: 'Alta OK' });
+  });
+});
+
+// Agregar alumno nuevo
+app.post('/api/alumnos', (req, res) => {
+  const { nombres, apellidos, curso } = req.body;
+  if (!nombres || !apellidos || !curso) {
+    return res.status(400).json({ error: 'Faltan datos' });
+  }
+  const q = 'INSERT INTO alumnos (nombres, apellidos, curso) VALUES (?, ?, ?)';
+  conn.query(q, [nombres, apellidos, curso], (err, rs) => {
+    if (err) return res.status(500).json({ error: err.message });
+    res.status(201).json({ msg: 'Alumno agregado correctamente', id: rs.insertId });
   });
 });
 
